@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #0b0b0f;
+}
+
+
+header {
+    width: 100%;
+
+    padding: 20px 8%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #111;
+
+    border-bottom: 1px solid #333;
+}
+
+header h1 {
+    color: #ffffff;
+
+    font-size: 28px;
+}
+
+
+
+nav {
+    display: flex;
+
+    gap: 25px;
+}
+
+nav a {
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #8b5cf6;
+}
+
+
+main {
+    width: 100%;
+
+    min-height: 80vh;
+
+    padding: 50px 8%;
+
+    background-color: #0b0b0f;
+}
+
+
+
+.produtos h2 {
+    color: white;
+
+    font-size: 32px;
+
+    margin-bottom: 30px;
+}
+
+
+.lista-produtos {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+.produto {
+    background-color: #17171d;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    border: 1px solid #292933;
+
+    transition: 0.3s;
+}
+
+.produto:hover {
+    transform: translateY(-8px);
+
+    border-color: #8b5cf6;
+
+    box-shadow: 0 10px 30px rgba(139, 92, 246, 0.25);
+}
+
+
+
+.produto img {
+    width: 100%;
+
+    height: 220px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+
+
+.produto-info {
+    padding: 20px;
+}
+
+.produto-info h3 {
+    color: white;
+
+    font-size: 22px;
+
+    margin-bottom: 10px;
+}
+
+.produto-info p {
+    color: #aaa;
+
+    font-size: 15px;
+
+    line-height: 1.5;
+
+    margin-bottom: 18px;
+}
+
+
+
+
+.preco {
+    display: block;
+
+    color: #a78bfa;
+
+    font-size: 24px;
+
+    font-weight: bold;
+
+    margin-bottom: 18px;
+}
+
+
+
+.btn-comprar {
+    width: 100%;
+
+    padding: 12px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background-color: #7c3aed;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.btn-comprar:hover {
+    background-color: #9333ea;
+
+    transform: scale(1.02);
+}
+
+
+
+footer {
+    width: 100%;
+
+    padding: 20px;
+
+    text-align: center;
+
+    background-color: #111;
+
+    color: #777;
+
+    border-top: 1px solid #333;
+}
+
+
+@media (max-width: 800px) {
+
+    header {
+        flex-direction: column;
+
+        gap: 20px;
+
+        text-align: center;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    .lista-produtos {
+        grid-template-columns: 1fr;
+    }
