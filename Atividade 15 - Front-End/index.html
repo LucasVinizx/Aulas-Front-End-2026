@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="glow glow-1"></section>
+    <section class="glow glow-2"></section>
+
+    <header class="site-header">
+        <a class="logo" href="index.html"><span>G</span> GAME STORE</a>
+        <nav>
+            <a class="active" href="index.html">Início</a>
+            <a href="#produtos">Produtos</a>
+            <a href="./pages/Login/login.html">Entrar</a>
+            <a class="nav-cta" href="./pages/cadastro/cadastro.html">Criar conta</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <section class="hero-copy">
+                <span class="eyebrow">NOVA EXPERIÊNCIA GAMER</span>
+                <h1>Seu próximo<br><strong>nível começa aqui.</strong></h1>
+                <p>Equipamentos para jogar, criar e vencer. Encontre tecnologia gamer com visual moderno e performance
+                    de verdade.</p>
+                <section class="hero-actions">
+                    <a class="primary-btn" href="#produtos">Explorar produtos <span>→</span></a>
+                    <a class="secondary-btn" href="#produtos">Ver ofertas</a>
+                </section>
+                <section class="stats">
+                    <section><strong>+2.5K</strong><span>clientes</span></section>
+                    <section><strong>4.9/5</strong><span>avaliação</span></section>
+                    <section><strong>24h</strong><span>envio rápido</span></section>
+                </section>
+            </section>
+            <section class="hero-art">
+                <section class="hero-orb"></section>
+                <img src="./assets/games.avif" alt="Jogos em destaque">
+                <section class="floating-card"><span>🔥</span>
+                    <section><strong>Hot drop</strong><small>Produtos em alta</small></section>
+                </section>
+            </section>
+        </section>
+
+        <section class="category-bar" aria-label="Categorias">
+            <span class="category active">Todos</span>
+            <span class="category">Notebooks</span>
+            <span class="category">Periféricos</span>
+            <span class="category">Teclados</span>
+            <span class="category">Ofertas</span>
+        </section>
+
+        <section class="produtos" id="produtos">
+            <section class="section-heading">
+                <section><span class="eyebrow">SELEÇÃO DA SEMANA</span>
+                    <h2>Produtos em destaque</h2>
+                </section>
+                <a href="#produtos">Ver todos <span>→</span></a>
+            </section>
+
+            <section class="lista-produtos">
+                <article class="produto featured">
+                    <section class="product-image"><span class="tag">DESTAQUE</span><img src="./assets/Notebook.webp"
+                            alt="Notebook Gamer"></section>
+                    <section class="produto-info">
+                        <span class="product-type">PERFORMANCE</span>
+                        <h3>Notebook Gamer</h3>
+                        <p>Alta performance para jogos, criação e trabalho.</p>
+                        <section class="product-bottom"><span class="preco">R$ 4.500,00</span><button
+                                class="btn-comprar">Comprar <span>↗</span></button></section>
+                    </section>
+                </article>
+
+                <article class="produto">
+                    <section class="product-image"><span class="tag">POPULAR</span><img src="./assets/Mouse.jpg"
+                            alt="Mouse Gamer"></section>
+                    <section class="produto-info">
+                        <span class="product-type">PRECISÃO</span>
+                        <h3>Mouse Gamer</h3>
+                        <p>RGB, alta precisão e resposta rápida.</p>
+                        <section class="product-bottom"><span class="preco">R$ 150,00</span><button
+                                class="btn-comprar">Comprar <span>↗</span></button></section>
+                    </section>
+                </article>
+
+                <article class="produto">
+                    <section class="product-image"><span class="tag">RGB</span><img src="./assets/Teclado.jpg"
+                            alt="Teclado Mecânico"></section>
+                    <section class="produto-info">
+                        <span class="product-type">PERIFÉRICO</span>
+                        <h3>Teclado Mecânico</h3>
+                        <p>Switches precisos e iluminação RGB.</p>
+                        <section class="product-bottom"><span class="preco">R$ 320,00</span><button
+                                class="btn-comprar">Comprar <span>↗</span></button></section>
+                    </section>
+                </article>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Game Store · Tecnologia para quem joga.</p>
+    </footer>
+</body>
+
+</html>

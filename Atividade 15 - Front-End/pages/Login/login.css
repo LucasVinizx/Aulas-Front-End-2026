@@ -1,0 +1,287 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+
+    background-color: #0b0b0f;
+
+    color: white;
+}
+
+
+
+
+header {
+    width: 100%;
+
+    padding: 20px 8%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #111;
+
+    border-bottom: 1px solid #333;
+}
+
+header h1 {
+    font-size: 28px;
+
+    color: white;
+}
+
+
+nav {
+    display: flex;
+
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #8b5cf6;
+}
+
+
+
+main {
+    min-height: calc(100vh - 140px);
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 40px 20px;
+}
+
+
+
+
+.login-container {
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+
+
+.login-box {
+    width: 100%;
+
+    max-width: 420px;
+
+    padding: 35px;
+
+    background-color: #17171d;
+
+    border: 1px solid #292933;
+
+    border-radius: 15px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.login-box h2 {
+    margin-bottom: 10px;
+
+    text-align: center;
+
+    font-size: 30px;
+}
+
+.login-box>p {
+    margin-bottom: 30px;
+
+    text-align: center;
+
+    color: #999;
+}
+
+
+
+.campo {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+
+    margin-bottom: 20px;
+}
+
+.campo label {
+    font-size: 15px;
+
+    font-weight: 600;
+
+    color: #ddd;
+}
+
+.campo input {
+    width: 100%;
+
+    padding: 13px 15px;
+
+    border: 1px solid #333;
+
+    border-radius: 8px;
+
+    outline: none;
+
+    background-color: #0f0f13;
+
+    color: white;
+
+    font-size: 15px;
+
+    transition: 0.3s;
+}
+
+.campo input:focus {
+    border-color: #8b5cf6;
+
+    box-shadow: 0 0 0 2px rgba(139, 92, 246, 0.15);
+}
+
+.campo input::placeholder {
+    color: #666;
+}
+
+
+.btn-login {
+    width: 100%;
+
+    padding: 13px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background-color: #7c3aed;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.btn-login:hover {
+    background-color: #9333ea;
+
+    transform: scale(1.02);
+}
+
+
+
+.links-login {
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    margin-top: 25px;
+}
+
+.links-login a {
+    color: #a78bfa;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+.links-login a:hover {
+    color: #c4b5fd;
+
+    text-decoration: underline;
+}
+
+
+
+footer {
+    width: 100%;
+
+    padding: 20px;
+
+    text-align: center;
+
+    background-color: #111;
+
+    color: #777;
+
+    border-top: 1px solid #333;
+}
+
+
+
+
+@media (max-width: 600px) {
+
+    header {
+        flex-direction: column;
+
+        gap: 20px;
+
+        text-align: center;
+    }
+
+    nav {
+        gap: 15px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    main {
+        padding: 30px 15px;
+    }
+
+    .login-box {
+        padding: 25px 20px;
+    }
+
+    .links-login {
+        flex-direction: column;
+
+        align-items: center;
+
+        text-align: center;
+    }
+
+}
+
