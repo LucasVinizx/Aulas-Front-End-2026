@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 16 - HTML Semântico Responsivo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>HTML Semântico Responsivo</h1>
+        <p>Pagina de teste.</p>
+    </header>
+
+    <nav>
+        <a href="#inicio">Início</a>
+        <a href="#article">Article</a>
+        <a href="#section">Section</a>
+        <a href="#aula">Aula 15</a>
+    </nav>
+
+    <div class="layout" id="inicio">
+        <aside>
+            <h2>Aside</h2>
+            <p>Conteúdo lateral</p>
+            <ul>
+                <li>px</li>
+                <li>rem</li>
+                <li>em</li>
+                <li>%</li>
+                <li>vw / vh</li>
+            </ul>
+        </aside>
+
+        <main>
+            <article id="article">
+                <h2>Article</h2>
+                <figure>
+                    <div class="demo-box">&lt;figure&gt;</div>
+                    <figcaption>Exemplo usando unidades responsivas</figcaption>
+                </figure>
+                <p>
+                    O <strong>article</strong> reúne um conteúdo independente. Nesta atividade usamos
+                    <strong>max-width</strong>, <strong>min-width</strong>, <strong>min-height</strong> e
+                    unidades como <strong>rem</strong>, <strong>em</strong>, <strong>%</strong>, <strong>vw</strong> e <strong>vh</strong>.
+                </p>
+            </article>
+
+            <section id="section">
+                <h2>Section</h2>
+                <div class="cards">
+                    <div class="card">
+                        <strong>max-width</strong>
+                        <span>O conteúdo cresce até um limite.</span>
+                    </div>
+                    <div class="card">
+                        <strong>min-height</strong>
+                        <span>A seção mantém uma altura mínima.</span>
+                    </div>
+                    <div class="card">
+                        <strong>vw / rem / %</strong>
+                        <span>Tamanhos adaptáveis à tela.</span>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer id="aula">
+        <p>Footer — Atividade 16 • HTML Semântico + CSS Responsivo</p>
+    </footer>
+
+</body>
+</html>

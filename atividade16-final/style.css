@@ -1,0 +1,282 @@
+:root {
+    font-size: 16px;
+    --header: #ff6f8f;
+    --nav: #43d8a4;
+    --aside: #f7cbd3;
+    --main: #b9dff7;
+    --article: #5fc5e8;
+    --figure: #fff0ae;
+    --paragraph: #e5ffa4;
+    --section: #09a7e8;
+    --footer: #ad76ed;
+    --text: #172033;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 2vw;
+    font-family: Arial, sans-serif;
+    color: var(--text);
+    background: #fff;
+    line-height: 1.5;
+}
+
+header,
+nav,
+aside,
+main,
+article,
+figure,
+section,
+footer {
+    border-radius: 8px;
+}
+
+header {
+    width: 100%;
+    max-width: 1200px;
+    min-height: 140px;
+    margin: 0 auto 1.5rem;
+    padding: 2rem;
+    background: var(--header);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header h1 {
+    margin: 0 0 .5rem;
+    font-size: 2rem;
+}
+
+header p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+nav {
+    width: 100%;
+    max-width: 1200px;
+    min-height: 70px;
+    margin: 0 auto 1.5rem;
+    padding: 1rem;
+    background: var(--nav);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: var(--text);
+    text-decoration: none;
+    font-weight: bold;
+    padding: .5rem 1rem;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, .35);
+}
+
+.layout {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto 1.5rem;
+    display: grid;
+    grid-template-columns: minmax(180px, 30%) minmax(0, 1fr);
+    gap: 1.5rem;
+}
+
+aside {
+    min-width: 180px;
+    min-height: 600px;
+    padding: 2rem 1.5rem;
+    background: var(--aside);
+}
+
+aside h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+
+aside ul {
+    padding-left: 1.5rem;
+}
+
+main {
+    min-width: 0;
+    min-height: 600px;
+    padding: 1.75rem;
+    background: var(--main);
+}
+
+article {
+    width: 100%;
+    max-width: 850px;
+    min-height: 420px;
+    margin: 0 auto 1rem;
+    padding: 1.5rem;
+    background: var(--article);
+}
+
+article h2,
+section h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+
+figure {
+    width: 100%;
+    min-height: 180px;
+    margin: 1rem 0;
+    padding: 1rem;
+    background: var(--figure);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.demo-box {
+    width: 50%;
+    max-width: 400px;
+    min-width: 180px;
+    height: 20vh;
+    min-height: 120px;
+    max-height: 220px;
+    background: rgba(255, 255, 255, .45);
+    border: 2px dashed #9b7c1f;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+figcaption {
+    margin-top: .75rem;
+    font-size: .9rem;
+}
+
+article p {
+    width: 100%;
+    min-height: 120px;
+    margin: 0;
+    padding: 1rem;
+    background: var(--paragraph);
+    border-radius: 6px;
+}
+
+section {
+    width: 100%;
+    min-height: 160px;
+    padding: 1.5rem;
+    background: var(--section);
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.card {
+    min-height: 120px;
+    padding: 1rem;
+    background: rgba(255, 255, 255, .55);
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .5rem;
+}
+
+.card strong {
+    font-size: 1.25em;
+}
+
+footer {
+    width: 100%;
+    max-width: 1200px;
+    min-height: 120px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: var(--footer);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Conteúdos da Aula 15 aplicados: px, rem, em, %, vw, vh,
+   max-width, min-width, min-height e max-height. */
+
+@media (max-width: 700px) {
+    body {
+        padding: 3vw;
+    }
+
+    header {
+        min-height: 120px;
+        padding: 1.25rem;
+    }
+
+    header h1 {
+        font-size: 1.6rem;
+    }
+
+    nav {
+        min-height: 60px;
+        gap: .5rem;
+    }
+
+    nav a {
+        font-size: .9rem;
+        padding: .4rem .7rem;
+    }
+
+    .layout {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    aside {
+        min-width: 0;
+        min-height: 150px;
+    }
+
+    main {
+        min-height: auto;
+        padding: 1rem;
+    }
+
+    article {
+        min-height: 0;
+        padding: 1rem;
+    }
+
+    .demo-box {
+        width: 80%;
+        min-width: 150px;
+        height: 18vh;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    section {
+        min-height: 0;
+        padding: 1rem;
+    }
+
+    footer {
+        min-height: 100px;
+        padding: 1rem;
+    }
+}
