@@ -1,0 +1,196 @@
+/* RESET */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f8b4d9;
+    color:white;
+    transition:.4s;
+}
+
+/*=====================
+MENU MOBILE (Padrão)
+======================*/
+
+.menu-mobile{
+
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+
+    background:#d63384;
+
+    padding:15px;
+}
+
+.menu-mobile a{
+    text-decoration:none;
+    color:white;
+    font-size:1.6rem;
+}
+
+.menu-tablet,
+.menu-desktop{
+    display:none;
+}
+
+/*=====================
+CONTEÚDO
+======================*/
+
+.conteudo{
+    padding:20px;
+}
+
+.hero img{
+    width:100%;
+    border-radius:15px;
+}
+
+/* Apenas imagem mobile aparece inicialmente */
+
+.img-tablet,
+.img-desktop{
+    display:none;
+}
+
+.img-mobile{
+    display:block;
+}
+
+/*=====================
+TIPOGRAFIA FLUIDA
+======================*/
+
+h1{
+    margin-top:20px;
+    font-size:8vw;
+}
+
+p{
+    margin-top:15px;
+    font-size:4vw;
+    line-height:1.6;
+}
+
+/*==================================
+TABLET (480px até 767px)
+==================================*/
+
+@media (min-width:480px){
+
+    body{
+        background:#4caf50;
+    }
+
+    .menu-mobile{
+        display:none;
+    }
+
+    .menu-tablet{
+
+        display:flex;
+        flex-direction:column;
+
+        position:fixed;
+
+        left:0;
+        top:0;
+
+        width:180px;
+        height:100vh;
+
+        background:#2e7d32;
+
+        padding-top:40px;
+        gap:25px;
+    }
+
+    .menu-tablet a{
+
+        color:white;
+        text-decoration:none;
+        padding-left:20px;
+        font-size:1.2rem;
+    }
+
+    .conteudo{
+        margin-left:200px;
+    }
+
+    .img-mobile{
+        display:none;
+    }
+
+    .img-tablet{
+        display:block;
+    }
+
+    h1{
+        font-size:2.4rem;
+    }
+
+    p{
+        font-size:1.1rem;
+    }
+}
+
+/*==================================
+DESKTOP (767px ou mais)
+==================================*/
+
+@media (min-width:767px){
+
+    body{
+        background:#6a1b9a;
+    }
+
+    .menu-tablet{
+        display:none;
+    }
+
+    .menu-desktop{
+
+        display:flex;
+        justify-content:center;
+        gap:35px;
+
+        background:#4a148c;
+
+        padding:18px;
+    }
+
+    .menu-desktop a{
+
+        color:white;
+        text-decoration:none;
+        font-size:1.1rem;
+    }
+
+    .conteudo{
+        max-width:1000px;
+        margin:auto;
+        padding:40px;
+    }
+
+    .img-tablet{
+        display:none;
+    }
+
+    .img-desktop{
+        display:block;
+    }
+
+    h1{
+        font-size:3rem;
+    }
+
+    p{
+        font-size:1.2rem;
+    }
+}
