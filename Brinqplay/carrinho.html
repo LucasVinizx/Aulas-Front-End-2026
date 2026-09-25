@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-container": "#e5eeff", "surface-variant": "#d3e4fe", "inverse-primary": "#bec6e0", "on-error": "#ffffff", "inverse-on-surface": "#eaf1ff", "on-primary-container": "#7c839b", "secondary-fixed": "#dce1ff", "tertiary-fixed": "#ffddb8", "surface": "#f8f9ff", "on-secondary-container": "#fffbff", "on-secondary-fixed-variant": "#0039b5", "surface-container-highest": "#d3e4fe", "outline-variant": "#c6c6cd", "primary-container": "#131b2e", "inverse-surface": "#213145", "on-error-container": "#93000a", "on-tertiary": "#ffffff", "on-primary-fixed-variant": "#3f465c", "on-tertiary-container": "#b87500", "on-tertiary-fixed": "#2a1700", "primary-fixed": "#dae2fd", "primary": "#000000", "primary-fixed-dim": "#bec6e0", "on-secondary-fixed": "#001551", "on-primary": "#ffffff", "background": "#f8f9ff", "outline": "#76777d", "tertiary": "#000000", "surface-bright": "#f8f9ff", "surface-container-lowest": "#ffffff", "on-primary-fixed": "#131b2e", "on-surface-variant": "#45464d", "secondary-container": "#4069f2", "on-secondary": "#ffffff", "error": "#ba1a1a", "secondary": "#1d4ed8", "on-surface": "#0b1c30", "tertiary-container": "#2a1700", "surface-container-low": "#eff4ff", "surface-container-high": "#dce9ff", "error-container": "#ffdad6", "surface-dim": "#cbdbf5", "on-background": "#0b1c30", "surface-tint": "#565e74", "on-tertiary-fixed-variant": "#653e00", "secondary-fixed-dim": "#b7c4ff", "tertiary-fixed-dim": "#ffb95f" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-md": "1rem", "space-lg": "1.5rem", "space-sm": "0.5rem", "space-xs": "0.25rem", "margin": "2rem", "gutter-mobile": "1rem", "gutter": "1.5rem", "space-xl": "2.5rem", "margin-mobile": "1rem" }, "fontFamily": { "label-md": [ "Plus Jakarta Sans" ], "display-lg": [ "Plus Jakarta Sans" ], "body-lg": [ "Plus Jakarta Sans" ], "display-lg-mobile": [ "Plus Jakarta Sans" ], "label-sm": [ "Plus Jakarta Sans" ], "title-md": [ "Plus Jakarta Sans" ], "headline-md": [ "Plus Jakarta Sans" ], "headline-lg": [ "Plus Jakarta Sans" ], "label-lg": [ "Plus Jakarta Sans" ], "body-md": [ "Plus Jakarta Sans" ], "headline-sm": [ "Plus Jakarta Sans" ] }, "fontSize": { "label-md": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" } ], "display-lg": [ "48px", { "lineHeight": "56px", "letterSpacing": "-0.03em", "fontWeight": "800" } ], "body-lg": [ "16px", { "lineHeight": "26px", "fontWeight": "400" } ], "display-lg-mobile": [ "34px", { "lineHeight": "42px", "letterSpacing": "-0.025em", "fontWeight": "800" } ], "label-sm": [ "10px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700" } ], "title-md": [ "18px", { "lineHeight": "26px", "letterSpacing": "-0.005em", "fontWeight": "600" } ], "headline-md": [ "24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "700" } ], "headline-lg": [ "32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "label-lg": [ "14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "700" } ], "body-md": [ "14px", { "lineHeight": "22px", "fontWeight": "400" } ], "headline-sm": [ "20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" } ] } } } };</script><title>BrinqPlay | Carrinho de Compras</title></head><body class="bg-surface-container-lowest font-body-md text-on-surface antialiased"><header aria-label="Cabeçalho principal" class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-[1280px] mx-auto px-gutter-mobile lg:px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg"><a class="flex items-center gap-space-xs" data-path="catalogo-de-brinquedos" href="index.html"><div class="w-9 h-9 rounded-xl bg-secondary flex items-center justify-center"><span class="material-symbols-outlined text-on-secondary text-[20px]">smart_toy</span></div><span class="font-headline-sm text-headline-sm text-primary-container tracking-tight">Brinq<span class="text-secondary">Play</span></span></a><div class="hidden xl:flex items-center bg-surface-container-low rounded-full px-space-md py-space-xs gap-space-xs"><span class="material-symbols-outlined text-outline text-[18px]">search</span><input class="bg-transparent border-0 outline-none text-body-md font-body-md text-on-surface placeholder:text-outline w-64" placeholder="Buscar brinquedos, idades, marcas..." type="text"/><div class="h-4 w-[1px] bg-surface-container-high mx-space-xs"></div><span class="font-label-sm text-label-sm uppercase text-secondary px-space-xs">STEM</span><span class="font-label-sm text-label-sm uppercase text-on-tertiary-container px-space-xs">Jogos</span><span class="font-label-sm text-label-sm uppercase text-outline px-space-xs">Montar</span></div></div><nav aria-label="Navegação principal" class="hidden lg:flex items-center gap-space-xs bg-surface-container-low/70 p-1.5 rounded-full" data-active-classes="bg-secondary-fixed text-on-secondary-fixed font-label-lg rounded-full"><a class="font-label-lg text-label-lg px-space-md py-space-xs rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" data-path="catalogo-de-brinquedos" href="index.html">Catálogo de Brinquedos</a><a class="font-label-lg text-label-lg px-space-md py-space-xs rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" data-path="promocoes" href="#">Promoções</a><a class="font-label-lg text-label-lg px-space-md py-space-xs rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" data-path="novidades" href="#">Novidades</a><a class="font-label-lg text-label-lg px-space-md py-space-xs rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" data-path="sobre-nos" href="#">Sobre Nós</a></nav><div class="flex items-center gap-space-sm"><a class="hidden sm:flex items-center gap-1 font-label-md text-label-md text-on-surface-variant hover:text-on-surface px-space-sm py-space-xs rounded-lg transition-colors" data-path="central-de-ajuda" href="#"><span class="material-symbols-outlined text-[18px]">help_outline</span>Ajuda</a><a class="relative flex items-center justify-center w-10 h-10 rounded-full bg-surface-container-low hover:bg-surface-container-high transition-colors" data-path="carrinho" href="carrinho.html"><span class="material-symbols-outlined text-primary-container text-[20px]">shopping_bag</span><span class="absolute -top-1 -right-1 w-5 h-5 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm flex items-center justify-center" data-cart-count="true">3</span></a><a class="hidden md:flex items-center gap-space-xs bg-primary-container hover:bg-inverse-surface text-on-primary font-label-md text-label-md px-space-md py-space-xs rounded-full transition-all" data-path="autenticacao" href="login.html"><span class="material-symbols-outlined text-[16px]">login</span>Entrar / Cadastrar</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface-container-lowest min-h-screen"><div class="flex flex-col w-full">
+<div class="w-full bg-surface-container-low py-space-md">
+<div class="max-w-[1280px] mx-auto px-gutter-mobile lg:px-margin">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-xs font-label-md text-label-md text-on-surface-variant">
+<a class="hover:text-secondary transition-colors" data-path="catalogo-de-brinquedos" href="index.html">Início</a>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+<span class="text-primary-container font-headline-sm text-headline-sm md:text-title-md">Carrinho de Compras</span>
+<span class="bg-surface-container-highest text-secondary text-label-sm font-label-sm px-space-xs py-0.5 rounded-full">4 itens</span>
+</div>
+<div class="flex items-center gap-space-xs sm:gap-space-sm overflow-x-auto pb-1 sm:pb-0">
+<div class="flex items-center gap-space-xs bg-primary-container text-on-primary px-space-md py-1.5 rounded-full shadow-sm">
+<span class="w-5 h-5 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm flex items-center justify-center">1</span>
+<span class="font-label-md text-label-md whitespace-nowrap">Carrinho</span>
+</div>
+<span class="material-symbols-outlined text-outline text-[16px]">arrow_forward</span>
+<div class="flex items-center gap-space-xs text-on-surface-variant px-space-sm py-1.5 rounded-full">
+<span class="w-5 h-5 rounded-full bg-surface-container-highest text-outline font-label-sm text-label-sm flex items-center justify-center">2</span>
+<span class="font-label-md text-label-md whitespace-nowrap hidden sm:inline">Identificação</span>
+</div>
+<span class="material-symbols-outlined text-outline text-[16px] hidden sm:block">arrow_forward</span>
+<div class="flex items-center gap-space-xs text-on-surface-variant px-space-sm py-1.5 rounded-full hidden sm:flex">
+<span class="w-5 h-5 rounded-full bg-surface-container-highest text-outline font-label-sm text-label-sm flex items-center justify-center">3</span>
+<span class="font-label-md text-label-md whitespace-nowrap">Pagamento</span>
+</div>
+<span class="material-symbols-outlined text-outline text-[16px] hidden sm:block">arrow_forward</span>
+<div class="flex items-center gap-space-xs text-on-surface-variant px-space-sm py-1.5 rounded-full hidden sm:flex">
+<span class="w-5 h-5 rounded-full bg-surface-container-highest text-outline font-label-sm text-label-sm flex items-center justify-center">4</span>
+<span class="font-label-md text-label-md whitespace-nowrap">Confirmação</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="max-w-[1280px] mx-auto px-gutter-mobile lg:px-margin py-space-xl w-full">
+<div class="mb-space-lg bg-surface-container-low rounded-2xl p-space-md flex flex-col sm:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[24px]">local_shipping</span>
+</div>
+<div>
+<p class="font-label-lg text-label-lg text-primary-container">Parabéns! Você ganhou <strong class="text-secondary">Frete Grátis</strong> para esta compra</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Válido em compras acima de R$ 99,00 para todo o Brasil.</p>
+</div>
+</div>
+<div class="w-full sm:w-48 bg-surface-container-highest rounded-full h-2 overflow-hidden">
+<div class="bg-secondary h-full rounded-full w-full"></div>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
+<div class="lg:col-span-8 space-y-space-lg">
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm space-y-space-lg">
+<div class="flex items-center justify-between pb-space-sm">
+<h2 class="font-headline-sm text-headline-sm text-primary-container">Brinquedos Selecionados</h2>
+<button class="font-label-md text-label-md text-outline hover:text-error transition-colors flex items-center gap-1" data-cart-action="clear">
+<span class="material-symbols-outlined text-[16px]">delete_sweep</span>
+              Limpar Carrinho
+            </button>
+</div>
+<div class="space-y-space-md">
+<div class="bg-surface-container-low/50 hover:bg-surface-container-low rounded-2xl p-space-md transition-all flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-md" data-cart-item="super-robo" data-price="249.90">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="relative w-24 h-24 rounded-xl overflow-hidden bg-surface-container-highest flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="High-tech educational programmable robot toy with LED display smiling face and modern clean blue and white chassis, illuminated tabletop studio photography, vibrant playful educational product." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCYq4a-7Gl2CB4te1V7ygW68ZGsmVWNlmscV0Uc3ZMq-I1xQALlhwlysO5mDnFqyrlJIaZgQbVtbaVWf8EnEBO5migqQaTLwoaj57oTsvAUfo9RkVvaHX-m8HgzdfbQrUo0B4lV-n3arzlyTI3vYLsQQhB-RXukFu0RyaBFd9iMJQ4gq9LEnQOp2Hxoh2oiBm8lf-rLdYQL1tY36aOdg5BvK6BWzxZKrY2fXfgLEdue4SkNp6ZfPsi0Q"/>
+<span class="absolute top-1 left-1 bg-primary-container text-on-primary font-label-sm text-label-sm px-1.5 py-0.5 rounded-full">STEM</span>
+</div>
+<div class="space-y-1 min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm px-2 py-0.5 rounded-full">8+ anos</span>
+<span class="font-label-sm text-label-sm text-outline">SKU: BP-7890</span>
+</div>
+<h3 class="font-title-md text-title-md text-primary-container font-semibold truncate">Super Robô Programável STEAM Explorer</h3>
+<div class="flex items-center gap-space-xs text-on-tertiary-container font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">bolt</span>
+<span>Montagem guiada via App Bluetooth incluso</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between w-full sm:w-auto sm:justify-end gap-space-lg">
+<div class="flex items-center bg-surface-container-lowest rounded-full p-1 shadow-sm">
+<button class="w-8 h-8 rounded-full hover:bg-surface-container-high flex items-center justify-center text-primary-container transition-colors" data-cart-action="decrease">
+<span class="material-symbols-outlined text-[18px]">remove</span>
+</button>
+<span class="w-8 text-center font-label-lg text-label-lg text-primary-container font-bold" data-cart-qty="true">1</span>
+<button class="w-8 h-8 rounded-full hover:bg-surface-container-high flex items-center justify-center text-primary-container transition-colors" data-cart-action="increase">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+<div class="text-right">
+<p class="font-headline-sm text-headline-sm text-primary-container font-bold" data-cart-line-total="true">R$ 249,90</p>
+<p class="font-label-sm text-label-sm text-outline">1x R$ 249,90</p>
+</div>
+<button class="text-outline hover:text-error transition-colors p-2 rounded-full hover:bg-surface-container-highest" data-cart-action="remove">
+<span class="material-symbols-outlined text-[20px]">delete_outline</span>
+</button>
+</div>
+</div>
+<div class="bg-surface-container-low/50 hover:bg-surface-container-low rounded-2xl p-space-md transition-all flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-md" data-cart-item="castelo-magico" data-price="189.90">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="relative w-24 h-24 rounded-xl overflow-hidden bg-surface-container-highest flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Intricate colorful toy castle building blocks architecture kit with 750 pieces, precision engineered colorful bricks with fantasy towers and minifigures, bright commercial studio lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_vRC0qz27vzSCgFmyBED_InwJ8m4AW0RVSVhRKFt9BirKXAAfLEwDUl4vHq65lDW6r3w6OLT9ouf-p8mz19iAe_9rZsHxsodl-dr7EvNMK1BTvmJpa-2I9Pca-Ds4MBHxtvZWHqt74DytauhVAcKpHJJf4ZlkwOL8IQE8Y686o3xy71GTuOSPb5ijpGUl6sCNC9K11fQPtXkuE1YMXFLUWDJas7eO6hgBwySylN2ESPaSl7F2_ArViw"/>
+<span class="absolute top-1 left-1 bg-secondary text-on-secondary font-label-sm text-label-sm px-1.5 py-0.5 rounded-full">Construção</span>
+</div>
+<div class="space-y-1 min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm px-2 py-0.5 rounded-full">6+ anos</span>
+<span class="font-label-sm text-label-sm text-outline">SKU: BP-4311</span>
+</div>
+<h3 class="font-title-md text-title-md text-primary-container font-semibold truncate">Kit Castelo Mágico Blocos Criativos 750 Peças</h3>
+<div class="flex items-center gap-space-xs text-outline font-label-sm text-label-sm">
+<span>Compatível com outras marcas líderes</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between w-full sm:w-auto sm:justify-end gap-space-lg">
+<div class="flex items-center bg-surface-container-lowest rounded-full p-1 shadow-sm">
+<button class="w-8 h-8 rounded-full hover:bg-surface-container-high flex items-center justify-center text-primary-container transition-colors" data-cart-action="decrease">
+<span class="material-symbols-outlined text-[18px]">remove</span>
+</button>
+<span class="w-8 text-center font-label-lg text-label-lg text-primary-container font-bold" data-cart-qty="true">2</span>
+<button class="w-8 h-8 rounded-full hover:bg-surface-container-high flex items-center justify-center text-primary-container transition-colors" data-cart-action="increase">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+<div class="text-right">
+<p class="font-headline-sm text-headline-sm text-primary-container font-bold" data-cart-line-total="true">R$ 379,80</p>
+<p class="font-label-sm text-label-sm text-outline">2x R$ 189,90</p>
+</div>
+<button class="text-outline hover:text-error transition-colors p-2 rounded-full hover:bg-surface-container-highest" data-cart-action="remove">
+<span class="material-symbols-outlined text-[20px]">delete_outline</span>
+</button>
+</div>
+</div>
+<div class="bg-surface-container-low/50 hover:bg-surface-container-low rounded-2xl p-space-md transition-all flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-md" data-cart-item="misterio-floresta" data-price="119.90">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="relative w-24 h-24 rounded-xl overflow-hidden bg-surface-container-highest flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Family cooperative board game box art with mysterious enchanted forest illustration, colorful wooden pawns, mystical dice, and quest cards, premium studio shot." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFbnMfh4FuoBD0wc-T9BKEcIOHLWILJg3qRwjDCPxg-QSKpKfXX7vulOuE5Ohv49gw2D8tzsaYqIGlCbIkL-P2o1xT7e_mKEI7paIpf_5yr6DQZXDzBpW28YJg9kqNTJ-e4GdxW6u47xNvGIo6nK69uOCAYLj8ej70LltXHw2_fku0A8TChmmEXppimmeq0l4pSnOcXtB5YrAx602iuc9pf2AMNFs7929cpmg_2I0MSL16kxV7MY0JFQ"/>
+<span class="absolute top-1 left-1 bg-surface-container-highest text-primary-container font-label-sm text-label-sm px-1.5 py-0.5 rounded-full">Família</span>
+</div>
+<div class="space-y-1 min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm px-2 py-0.5 rounded-full">7+ anos</span>
+<span class="font-label-sm text-label-sm text-outline">SKU: BP-1092</span>
+</div>
+<h3 class="font-title-md text-title-md text-primary-container font-semibold truncate">Jogo de Tabuleiro Mistério na Floresta</h3>
+<div class="flex items-center gap-space-xs text-outline font-label-sm text-label-sm">
+<span>2 a 5 Jogadores • Duração média de 30 min</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between w-full sm:w-auto sm:justify-end gap-space-lg">
+<div class="flex items-center bg-surface-container-lowest rounded-full p-1 shadow-sm">
+<button class="w-8 h-8 rounded-full hover:bg-surface-container-high flex items-center justify-center text-primary-container transition-colors" data-cart-action="decrease">
+<span class="material-symbols-outlined text-[18px]">remove</span>
+</button>
+<span class="w-8 text-center font-label-lg text-label-lg text-primary-container font-bold" data-cart-qty="true">1</span>
+<button class="w-8 h-8 rounded-full hover:bg-surface-container-high flex items-center justify-center text-primary-container transition-colors" data-cart-action="increase">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+<div class="text-right">
+<p class="font-headline-sm text-headline-sm text-primary-container font-bold" data-cart-line-total="true">R$ 119,90</p>
+<p class="font-label-sm text-label-sm text-outline">1x R$ 119,90</p>
+</div>
+<button class="text-outline hover:text-error transition-colors p-2 rounded-full hover:bg-surface-container-highest" data-cart-action="remove">
+<span class="material-symbols-outlined text-[20px]">delete_outline</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low/70 rounded-2xl p-space-lg shadow-sm">
+<label class="flex items-start gap-space-md cursor-pointer select-none">
+<input checked="" class="mt-1 w-5 h-5 rounded-md accent-secondary cursor-pointer" type="checkbox"/>
+<div class="space-y-1 flex-1">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-primary-container font-semibold flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[22px]">featured_seasonal_and_gifts</span>
+                  Embalar todos os itens para Presente com Cartão Especial
+                </span>
+<span class="font-label-lg text-label-lg text-secondary font-bold">+ R$ 9,90</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                Inclui papel premium acetinado BrinqPlay, laço de cetim colorido e cartão manuscrito com mensagem personalizada que você pode redigir no checkout.
+              </p>
+</div>
+</label>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm space-y-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">local_shipping</span>
+<h4 class="font-title-md text-title-md text-primary-container font-semibold">Calcular Frete e Prazo</h4>
+</div>
+<div class="flex items-center gap-space-xs bg-surface-container-low rounded-full px-space-md py-1.5">
+<input class="bg-transparent border-0 outline-none text-body-md font-body-md text-on-surface w-full" placeholder="Informe seu CEP" type="text" value="01310-100"/>
+<button class="bg-primary-container text-on-primary font-label-md text-label-md px-space-md py-1.5 rounded-full hover:bg-inverse-surface transition-colors">
+                Calcular
+              </button>
+</div>
+<div class="space-y-space-xs pt-space-xs">
+<label class="flex items-center justify-between p-space-sm bg-surface-container-low rounded-xl cursor-pointer hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-sm">
+<input checked="" class="w-4 h-4 accent-secondary cursor-pointer" name="shipping" type="radio"/>
+<div>
+<p class="font-label-md text-label-md text-primary-container font-bold flex items-center gap-1">
+                      Frete Expresso BrinqPlay
+                      <span class="bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm px-1.5 py-0.2 rounded">Mais Rápido</span>
+</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Entrega em até 2 dias úteis</p>
+</div>
+</div>
+<span class="font-label-lg text-label-lg text-secondary font-bold">Grátis</span>
+</label>
+<label class="flex items-center justify-between p-space-sm rounded-xl cursor-pointer hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-space-sm">
+<input class="w-4 h-4 accent-secondary cursor-pointer" name="shipping" type="radio"/>
+<div>
+<p class="font-label-md text-label-md text-primary-container font-bold">Sedex Convencional</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Entrega em até 3 dias úteis</p>
+</div>
+</div>
+<span class="font-label-md text-label-md text-outline">R$ 18,50</span>
+</label>
+<label class="flex items-center justify-between p-space-sm rounded-xl cursor-pointer hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-space-sm">
+<input class="w-4 h-4 accent-secondary cursor-pointer" name="shipping" type="radio"/>
+<div>
+<p class="font-label-md text-label-md text-primary-container font-bold">PAC Econômico</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Entrega em 6 a 8 dias úteis</p>
+</div>
+</div>
+<span class="font-label-md text-label-md text-secondary font-bold">Grátis</span>
+</label>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm space-y-space-md flex flex-col justify-between">
+<div class="space-y-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">confirmation_number</span>
+<h4 class="font-title-md text-title-md text-primary-container font-semibold">Cupom Promocional</h4>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Tem um cupom de desconto ou vale-brinquedo? Digite abaixo.</p>
+<div class="flex items-center gap-space-xs bg-surface-container-low rounded-full px-space-md py-1.5">
+<input class="bg-transparent border-0 outline-none text-body-md font-body-md text-on-surface uppercase font-bold w-full" type="text" value="BRINQ10"/>
+<button class="bg-secondary text-on-secondary font-label-md text-label-md px-space-md py-1.5 rounded-full hover:bg-secondary-container transition-colors">
+                  Aplicar
+                </button>
+</div>
+<div class="flex items-center justify-between bg-surface-container-low/70 px-space-md py-space-xs rounded-xl">
+<div class="flex items-center gap-space-xs text-secondary">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span class="font-label-md text-label-md font-bold">BRINQ10 Aplicado (10% OFF)</span>
+</div>
+<button class="text-outline hover:text-error">
+<span class="material-symbols-outlined text-[16px]">close</span>
+</button>
+</div>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant pt-space-xs">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified_user</span>
+<span class="font-label-sm text-label-sm">Cupons e vouchers não são cumulativos com liquidações flash.</span>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-4 space-y-space-md sticky top-28">
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-md space-y-space-md">
+<div class="flex items-center justify-between pb-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-primary-container font-bold">Resumo do Pedido</h3>
+<span class="bg-surface-container-low text-primary-container px-space-sm py-0.5 rounded-full font-label-sm text-label-sm font-bold">4 itens</span>
+</div>
+<div class="space-y-space-sm font-body-md text-body-md text-on-surface-variant">
+<div class="flex items-center justify-between">
+<span>Subtotal dos produtos</span>
+<span class="text-on-surface font-semibold" data-cart-subtotal="true">R$ 749,60</span>
+</div>
+<div class="flex items-center justify-between text-secondary">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">sell</span>
+                Cupom (BRINQ10)
+              </span>
+<span class="font-bold">- R$ 74,96</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">card_giftcard</span>
+                Embalagem de presente
+              </span>
+<span class="text-on-surface font-semibold">R$ 9,90</span>
+</div>
+<div class="flex items-center justify-between">
+<span>Frete Expresso</span>
+<span class="text-secondary font-bold">Grátis</span>
+</div>
+</div>
+<div class="pt-space-md bg-surface-container-low/50 rounded-xl p-space-md space-y-1">
+<div class="flex items-baseline justify-between">
+<span class="font-title-md text-title-md text-primary-container font-bold">Total Geral</span>
+<span class="font-display-lg text-headline-lg sm:text-display-lg text-primary-container font-black leading-none" data-cart-total="true">R$ 684,54</span>
+</div>
+<p class="font-label-md text-label-md text-on-surface-variant text-right">
+              ou em até <strong class="text-primary-container">10x de R$ 68,45</strong> sem juros
+            </p>
+<div class="mt-space-xs pt-space-xs flex items-center justify-between text-secondary">
+<span class="font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">qr_code_2</span>
+                No Pix com 5% extra:
+              </span>
+<span class="font-headline-sm text-headline-sm font-extrabold">R$ 649,90</span>
+</div>
+</div>
+<div class="space-y-space-xs pt-space-xs">
+<a class="w-full bg-primary-container hover:bg-inverse-surface text-on-primary font-headline-sm text-title-md py-space-md rounded-full shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-space-xs text-center font-bold" href="checkout.html">
+<span>Finalizar Compra</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</a>
+<a class="w-full bg-surface-container-low hover:bg-surface-container text-primary-container font-label-lg text-label-lg py-3 rounded-full transition-colors flex items-center justify-center gap-space-xs text-center font-semibold" data-path="catalogo-de-brinquedos" href="index.html">
+<span class="material-symbols-outlined text-[18px]">shopping_bag</span>
+              Continuar Comprando
+            </a>
+</div>
+<div class="pt-space-md space-y-space-sm bg-surface-container-low rounded-xl p-space-sm">
+<div class="flex items-center gap-space-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-secondary text-[20px]">lock</span>
+<span class="font-label-sm text-label-sm font-semibold text-primary-container">Ambiente Seguro com Criptografia SSL 256-bit</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-secondary text-[20px]">sync</span>
+<span class="font-label-sm text-label-sm">30 dias para devolução gratuita sem complicação</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-secondary text-[20px]">verified</span>
+<span class="font-label-sm text-label-sm">Brinquedos certificados pelo INMETRO</span>
+</div>
+</div>
+</div>
+<div class="p-space-md bg-surface-container-low/50 rounded-2xl flex items-center justify-between text-outline">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[22px]">credit_card</span>
+<span class="material-symbols-outlined text-[22px]">payments</span>
+<span class="material-symbols-outlined text-[22px]">qr_code</span>
+<span class="material-symbols-outlined text-[22px]">account_balance_wallet</span>
+</div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider font-bold">BrinqPlay Pay</span>
+</div>
+</div>
+</div>
+<div class="mt-space-xl pt-space-xl">
+<div class="flex items-center justify-between mb-space-lg">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Aproveite o Frete Grátis</span>
+<h3 class="font-headline-md text-headline-md text-primary-container font-bold">Quem comprou estes brinquedos também amou:</h3>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="w-10 h-10 rounded-full bg-surface-container-low hover:bg-surface-container flex items-center justify-center text-primary-container transition-colors">
+<span class="material-symbols-outlined text-[20px]">chevron_left</span>
+</button>
+<button class="w-10 h-10 rounded-full bg-surface-container-low hover:bg-surface-container flex items-center justify-center text-primary-container transition-colors">
+<span class="material-symbols-outlined text-[20px]">chevron_right</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-lg">
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
+<div class="space-y-space-sm">
+<div class="relative w-full aspect-square rounded-xl overflow-hidden bg-surface-container-low">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform" data-alt="Microscope science laboratory starter kit for curious kids with glass slides, colorful test tubes, and LED illuminator, studio white clean composition." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBwjGpk9ZWAwQlRXWdXzsIYBYWA3vi3EKJbNF4199iS5eSjiwHTlgo_ZEMq1UKLyZ7W5a3w-arGO6vcLBuxATTIGe9UJccUCuWbWP2Fiwdd1a9vCxlSiAQUrLYfpHGtDmCOx8ts78OflZZ_QPzV_SSbXMqA6HRXKkPMEqGOwtXx3896c6NaoQ4eN0MW0i-B6hkS1QpJy2oSCGrcUKkYDvrm37_nvKFS44iUW1SPJN3NvcGx-kPg6Ws-A"/>
+<span class="absolute top-2 left-2 bg-primary-container text-on-primary font-label-sm text-label-sm px-2 py-0.5 rounded-full">Ciência</span>
+</div>
+<div class="space-y-1">
+<span class="font-label-sm text-label-sm text-outline">8-14 anos</span>
+<h4 class="font-title-md text-title-md text-primary-container font-semibold line-clamp-1">Mini Microscópio Óptico Portátil</h4>
+<p class="font-label-sm text-label-sm text-on-surface-variant line-clamp-1">Ampliação de até 120x com luz LED</p>
+</div>
+</div>
+<div class="pt-space-md flex items-center justify-between">
+<div>
+<p class="font-headline-sm text-headline-sm text-primary-container font-bold">R$ 89,90</p>
+<p class="font-label-sm text-label-sm text-outline">em até 3x sem juros</p>
+</div>
+<button class="w-10 h-10 rounded-full bg-surface-container-low hover:bg-secondary hover:text-on-secondary text-primary-container flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-[20px]">add_shopping_cart</span>
+</button>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
+<div class="space-y-space-sm">
+<div class="relative w-full aspect-square rounded-xl overflow-hidden bg-surface-container-low">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform" data-alt="Colorful magnetic building tiles 3D geometric construction set with translucent bright shapes catching sunlight, elegant toy presentation." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCW4_7HmDw5LduETXjk2HLS7Zprt9TvlNb5diSdTI0ujupwPKeuhWS70-scETBdjfxtPz_ddyBOowmkFwF5MN7phL15bdiK6ULmRi0g1tXFmkl1aEDoeBs6sWuLuyYvMcCthzmuc_FqJ82boupjz95Q_zOl6UsHeRqY8qHbOKdIimqFv6OeaIYWNOpZlVloMiAePrbEvD9JDWsfleHlcrsMggGa0AzLaxvUxevrlT5ip4qD_mhPA2mvqw"/>
+<span class="absolute top-2 left-2 bg-secondary text-on-secondary font-label-sm text-label-sm px-2 py-0.5 rounded-full">Montar</span>
+</div>
+<div class="space-y-1">
+<span class="font-label-sm text-label-sm text-outline">3+ anos</span>
+<h4 class="font-title-md text-title-md text-primary-container font-semibold line-clamp-1">Placas Magnéticas 3D Criativas 48 Peças</h4>
+<p class="font-label-sm text-label-sm text-on-surface-variant line-clamp-1">Estimula raciocínio espacial e foco</p>
+</div>
+</div>
+<div class="pt-space-md flex items-center justify-between">
+<div>
+<p class="font-headline-sm text-headline-sm text-primary-container font-bold">R$ 159,90</p>
+<p class="font-label-sm text-label-sm text-outline">em até 5x sem juros</p>
+</div>
+<button class="w-10 h-10 rounded-full bg-surface-container-low hover:bg-secondary hover:text-on-secondary text-primary-container flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-[20px]">add_shopping_cart</span>
+</button>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
+<div class="space-y-space-sm">
+<div class="relative w-full aspect-square rounded-xl overflow-hidden bg-surface-container-low">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform" data-alt="Wooden natural eco-friendly balancing blocks set in pastel colors with smooth organic geometry on pure backdrop, modern scandinavian toy design." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbdLv_V8Xs42xCkNvp2LHaC2IgRUxupC-K1KUgu059ejtfPOTKGyhcwHq3pd5ENh7vajtKuDlfqOWPVGSsWyymEzHvTHXDsG6PTekr3tgQI-WJYkI1yiiz0HIhMZaJIJLcY3JhgcGiA5Wj1Z3_3b7dQKyswvrNRLK-6fPVOIIvO38r9ck6nZN69RcUPZTRyGry2izT-8zBfW1wyGoFAF9A0TIQYbBih4sH76qK5QcGARaazENh-3mkJw"/>
+<span class="absolute top-2 left-2 bg-tertiary-container text-on-tertiary-container font-label-sm text-label-sm px-2 py-0.5 rounded-full">Montessori</span>
+</div>
+<div class="space-y-1">
+<span class="font-label-sm text-label-sm text-outline">2-5 anos</span>
+<h4 class="font-title-md text-title-md text-primary-container font-semibold line-clamp-1">Pedras de Equilíbrio em Madeira Sustentável</h4>
+<p class="font-label-sm text-label-sm text-on-surface-variant line-clamp-1">Tinta atóxica à base d'água certificada</p>
+</div>
+</div>
+<div class="pt-space-md flex items-center justify-between">
+<div>
+<p class="font-headline-sm text-headline-sm text-primary-container font-bold">R$ 124,90</p>
+<p class="font-label-sm text-label-sm text-outline">em até 4x sem juros</p>
+</div>
+<button class="w-10 h-10 rounded-full bg-surface-container-low hover:bg-secondary hover:text-on-secondary text-primary-container flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-[20px]">add_shopping_cart</span>
+</button>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
+<div class="space-y-space-sm">
+<div class="relative w-full aspect-square rounded-xl overflow-hidden bg-surface-container-low">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform" data-alt="Electronic musical interactive synthesizer keyboard for kids with friendly animal keys and rhythm pads, clean bright children studio setup." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZ-JZz8dJutKIHe9uYeDgDG6qm7TxKGctbKZt7yYf7BXF_goLo5uUd6ncdRhjf_4yvNVqkheI42kuWYgEX_8lpfyEavbS_FZafpk4b0jzRrowA6ZdFvp1gtRXy9MewUg2KfCQsaQrKJVKRnfHK6ZvfONoAhgb74Kl0WEaQ64HRRVPQgjHOJC_AIvkniRskypqoQMdQC3QHFUhIkm1H6xgkuObYBzmSI9QTZdStzF4p-oFbDARB_32M5A"/>
+<span class="absolute top-2 left-2 bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm px-2 py-0.5 rounded-full">Musical</span>
+</div>
+<div class="space-y-1">
+<span class="font-label-sm text-label-sm text-outline">4+ anos</span>
+<h4 class="font-title-md text-title-md text-primary-container font-semibold line-clamp-1">Teclado Sinfonia dos Bichinhos</h4>
+<p class="font-label-sm text-label-sm text-on-surface-variant line-clamp-1">16 instrumentos e gravações reais</p>
+</div>
+</div>
+<div class="pt-space-md flex items-center justify-between">
+<div>
+<p class="font-headline-sm text-headline-sm text-primary-container font-bold">R$ 149,00</p>
+<p class="font-label-sm text-label-sm text-outline">em até 4x sem juros</p>
+</div>
+<button class="w-10 h-10 rounded-full bg-surface-container-low hover:bg-secondary hover:text-on-secondary text-primary-container flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-[20px]">add_shopping_cart</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></main><footer class="w-full bg-surface-container-low text-on-surface"><div class="max-w-[1280px] mx-auto px-gutter-mobile lg:px-margin pt-space-xl pb-space-lg"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-xl mb-space-xl"><div class="space-y-space-sm"><div class="flex items-center gap-space-xs"><div class="w-8 h-8 rounded-xl bg-secondary flex items-center justify-center"><span class="material-symbols-outlined text-on-secondary text-[18px]">smart_toy</span></div><span class="font-headline-sm text-headline-sm text-primary-container tracking-tight">Brinq<span class="text-secondary">Play</span></span></div><p class="font-body-md text-body-md text-on-surface-variant max-w-xs">Inspirando a imaginação e o aprendizado seguro através do brincar consciente e criativo.</p><div class="flex items-center gap-space-xs text-on-surface-variant"><span class="material-symbols-outlined text-[18px]">verified</span><span class="font-label-md text-label-md">Certificação INMETRO Rigorosa</span></div></div><div class="space-y-space-xs"><h4 class="font-label-lg text-label-lg text-primary-container uppercase">Explorar Brinquedos</h4><ul class="space-y-space-xs font-body-md text-body-md text-on-surface-variant"><li><a class="hover:text-on-surface transition-colors" data-path="catalogo-de-brinquedos" href="index.html">Brinquedos Educativos e STEM</a></li><li><a class="hover:text-on-surface transition-colors" data-path="catalogo-de-brinquedos" href="index.html">Blocos de Montar e Construção</a></li><li><a class="hover:text-on-surface transition-colors" data-path="catalogo-de-brinquedos" href="index.html">Jogos de Tabuleiro &amp; Quebra-Cabeças</a></li><li><a class="hover:text-on-surface transition-colors" data-path="promocoes" href="#">Ofertas da Semana</a></li></ul></div><div class="space-y-space-xs"><h4 class="font-label-lg text-label-lg text-primary-container uppercase">Atendimento e Suporte</h4><ul class="space-y-space-xs font-body-md text-body-md text-on-surface-variant"><li><a class="hover:text-on-surface transition-colors" data-path="central-de-ajuda" href="#">Central de Ajuda &amp; FAQ</a></li><li><a class="hover:text-on-surface transition-colors" data-path="central-de-ajuda" href="#">Rastreamento de Pedido</a></li><li><a class="hover:text-on-surface transition-colors" data-path="central-de-ajuda" href="#">Política de Trocas e Devoluções</a></li><li><a class="hover:text-on-surface transition-colors" data-path="sobre-nos" href="#">Segurança e Privacidade</a></li></ul></div><div class="space-y-space-sm"><h4 class="font-label-lg text-label-lg text-primary-container uppercase">Compra Segura</h4><div class="p-space-sm bg-surface-container-lowest rounded-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] space-y-space-xs"><div class="flex items-center gap-space-xs text-secondary"><span class="material-symbols-outlined text-[20px]">security</span><span class="font-label-md text-label-md text-primary-container">Blindagem SSL 256-bit</span></div><p class="font-label-sm text-label-sm text-on-surface-variant">Transações criptografadas com proteção total aos dados do comprador.</p></div><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-outline text-[22px]">credit_card</span><span class="material-symbols-outlined text-outline text-[22px]">payments</span><span class="material-symbols-outlined text-outline text-[22px]">qr_code_2</span><span class="material-symbols-outlined text-outline text-[22px]">local_shipping</span></div></div></div><div class="pt-space-md border-t border-surface-container-high/60 flex flex-col md:flex-row items-center justify-between gap-space-sm font-label-sm text-label-sm text-on-surface-variant"><span>© 2025 BrinqPlay Comércio de Brinquedos S.A. Todos os direitos reservados. CNPJ 00.000.000/0001-00</span><div class="flex items-center gap-space-md"><span>Garantia de 30 dias</span><span>Entrega Rápida Expressa</span><span>Atendimento Especializado</span></div></div></div></footer><script defer="True" src="script.js"></script></body></html>
