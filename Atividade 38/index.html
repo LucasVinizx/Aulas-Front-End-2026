@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lotus Corp | Alta Perfumaria Botânica</title>
+
+    <!-- Fontes Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Prata&display=swap"
+        rel="stylesheet">
+
+    <!-- Folha de Estilos Externa -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ==========================================
+       CABEÇALHO / HEADER
+       ========================================== -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="#" class="logo" onclick="navigateTo('home')">
+                <svg class="logo-icon" viewBox="0 0 24 24">
+                    <path
+                        d="M12 2C12 2 7 7.5 7 12C7 15.5 9.5 18 12 18C14.5 18 17 15.5 17 12C17 7.5 12 2 12 2ZM12 22C16 22 21 17 21 12C21 8 18 5 18 5C18 5 19 8.5 17 11.5C15 14.5 12 15 12 15C12 15 9 14.5 7 11.5C5 8.5 6 5 6 5C6 5 3 8 3 12C3 17 8 22 12 22Z" />
+                </svg>
+                <span>Lotus Corp</span>
+            </a>
+
+            <nav>
+                <ul class="nav-links">
+                    <li><span class="nav-link active" onclick="navigateTo('home')">Início</span></li>
+                    <li><span class="nav-link" onclick="navigateTo('catalog')">Perfumes</span></li>
+                    <li><span class="nav-link" onclick="navigateTo('home')">Sobre a Essência</span></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <!-- Gatilho da Sacola Lateral -->
+                <button class="cart-btn-trigger" onclick="toggleCart(true)" aria-label="Abrir Sacola">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <path d="M16 10a4 4 0 0 1-8 0"></path>
+                    </svg>
+                    <span class="cart-badge" id="cartCount">0</span>
+                </button>
+
+                <!-- Área de Autenticação / Avatar -->
+                <div class="user-profile-menu">
+                    <div id="authActions">
+                        <button class="btn btn-secondary btn-login-top" onclick="openAuthModal('login')">
+                            Entrar
+                        </button>
+                    </div>
+
+                    <div id="userAvatarContainer" style="display: none;">
+                        <button class="user-avatar-btn" onclick="toggleUserDropdown()">
+                            <div class="user-avatar" id="avatarInitials">LC</div>
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M6 9l6 6 6-6" />
+                            </svg>
+                        </button>
+                        <div class="user-dropdown" id="userDropdown">
+                            <button onclick="navigateTo('catalog')">Coleção Exclusiva</button>
+                            <button onclick="logout()">Sair da Conta</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- ==========================================
+         VIEW 1: HOME (PÁGINA INICIAL)
+         ========================================== -->
+        <section id="view-home" class="view-section active container">
+            <!-- Banner Informativo Principal -->
+            <article class="hero-banner">
+                <div class="hero-content">
+                    <h1>Sinta a pureza e a força da natureza.</h1>
+                    <p>Extração botânica consciente, notas raras e fixação prolongada. Conheça a assinatura olfativa da
+                        Lotus Corp.</p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" onclick="navigateTo('catalog')">Explorar Catálogo</button>
+                        <button class="btn btn-outline-light" onclick="viewProductDetails(1)">Destaque: Éclat
+                            Vert</button>
+                    </div>
+                </div>
+                <div class="hero-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=600&q=80"
+                        alt="Perfume Lotus Corp" class="hero-img">
+                </div>
+            </article>
+
+            <!-- Faixa de Benefícios -->
+            <section class="features-strip">
+                <div class="feature-card">
+                    <div class="feature-icon">🌿</div>
+                    <div>
+                        <strong>100% Orgânico</strong>
+                        <p>Extratos puros de flores e madeiras nobres.</p>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">✨</div>
+                    <div>
+                        <strong>Fixação 24 Horas</strong>
+                        <p>Concentração Eau de Parfum genuína.</p>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🕊️</div>
+                    <div>
+                        <strong>Cruelty-Free</strong>
+                        <p>Respeito e harmonia total com a natureza.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Destaques -->
+            <div class="section-header">
+                <div>
+                    <h2 class="section-title">Mais Desejados</h2>
+                    <p class="section-subtitle">Fragrâncias atemporais que despertam emoções.</p>
+                </div>
+                <button class="btn btn-secondary" onclick="navigateTo('catalog')">Ver Todos</button>
+            </div>
+
+            <div class="product-grid" id="homeFeaturedGrid"></div>
+        </section>
+
+        <!-- ==========================================
+         VIEW 2: CATÁLOGO DE PRODUTOS
+         ========================================== -->
+        <section id="view-catalog" class="view-section container">
+            <div class="section-header">
+                <div>
+                    <h2 class="section-title">Nossa Coleção Completa</h2>
+                    <p class="section-subtitle">Selecione por família olfativa e descubra sua assinatura.</p>
+                </div>
+            </div>
+
+            <div class="filter-bar">
+                <button class="filter-btn active" onclick="filterProducts('Todos', this)">Todos</button>
+                <button class="filter-btn" onclick="filterProducts('Floral', this)">Florais Frescos</button>
+                <button class="filter-btn" onclick="filterProducts('Amadeirado', this)">Amadeirados</button>
+                <button class="filter-btn" onclick="filterProducts('Cítrico', this)">Cítricos & Verdes</button>
+            </div>
+
+            <div class="product-grid" id="catalogGrid"></div>
+        </section>
+
+        <!-- ==========================================
+         VIEW 3: DETALHES DO PRODUTO
+         ========================================== -->
+        <section id="view-product-detail" class="view-section container">
+            <button class="btn btn-secondary btn-back" onclick="navigateTo('catalog')">
+                ← Voltar ao Catálogo
+            </button>
+            <div class="product-detail-layout" id="productDetailContainer"></div>
+        </section>
+
+        <!-- ==========================================
+         VIEW 4: CHECKOUT (COMPRA)
+         ========================================== -->
+        <section id="view-checkout" class="view-section container">
+            <h2 class="section-title checkout-title">Finalizar Pedido</h2>
+
+            <div class="checkout-grid">
+                <div class="card-panel">
+                    <h3 class="panel-heading">Informações de Envio e Pagamento</h3>
+                    <form id="checkoutForm" onsubmit="handleCheckout(event)">
+                        <div class="form-group">
+                            <label for="orderName">Nome Completo</label>
+                            <input type="text" class="form-control" id="orderName" required
+                                placeholder="Ex: Camila Silva">
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="orderEmail">E-mail</label>
+                                <input type="email" class="form-control" id="orderEmail" required
+                                    placeholder="seu@email.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="orderCep">CEP</label>
+                                <input type="text" class="form-control" id="orderCep" required placeholder="00000-000">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="orderAddress">Endereço de Entrega</label>
+                            <input type="text" class="form-control" id="orderAddress" required
+                                placeholder="Rua das Acácias, 120 - Apto 31">
+                        </div>
+
+                        <h4 class="payment-heading">Forma de Pagamento</h4>
+                        <div class="form-group">
+                            <select class="form-control" id="paymentMethod" required>
+                                <option value="Cartão de Crédito">Cartão de Crédito (até 6x sem juros)</option>
+                                <option value="PIX">PIX com 5% de Desconto</option>
+                                <option value="Boleto">Boleto Bancário</option>
+                            </select>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block checkout-submit">
+                            Confirmar Pagamento e Encomenda
+                        </button>
+                    </form>
+                </div>
+
+                <div class="card-panel">
+                    <h3 class="panel-heading">Resumo dos Itens</h3>
+                    <div id="checkoutItemsList"></div>
+                    <div class="summary-item subtotal-row">
+                        <span>Subtotal</span>
+                        <span id="checkoutSubtotal">R$ 0,00</span>
+                    </div>
+                    <div class="summary-item">
+                        <span>Frete Botânico Seguro</span>
+                        <span class="free-shipping">Grátis</span>
+                    </div>
+                    <div class="summary-item summary-total">
+                        <span>Total</span>
+                        <span id="checkoutTotal">R$ 0,00</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+         VIEW 5: RESUMO DA COMPRA
+         ========================================== -->
+        <section id="view-order-summary" class="view-section container">
+            <div class="card-panel summary-success-card">
+                <div class="success-icon-badge">✓</div>
+                <h2>Pedido Confirmado!</h2>
+                <p class="summary-desc">
+                    Obrigado por escolher a <strong>Lotus Corp</strong>. As suas essências já estão sendo cuidadosamente
+                    preparadas.
+                </p>
+
+                <div class="summary-receipt">
+                    <div class="summary-item">
+                        <strong>Número do Pedido:</strong>
+                        <span id="sumOrderId">#LC-89211</span>
+                    </div>
+                    <div class="summary-item">
+                        <strong>Destinatário:</strong>
+                        <span id="sumCustomer">Camila Silva</span>
+                    </div>
+                    <div class="summary-item">
+                        <strong>Endereço de Entrega:</strong>
+                        <span id="sumAddress">Rua das Acácias, 120</span>
+                    </div>
+                    <div class="summary-item">
+                        <strong>Forma de Pagamento:</strong>
+                        <span id="sumPayment">PIX</span>
+                    </div>
+                    <div class="summary-item summary-receipt-total">
+                        <strong>Valor Total Pago:</strong>
+                        <strong class="receipt-highlight" id="sumTotal">R$ 0,00</strong>
+                    </div>
+                </div>
+
+                <button class="btn btn-primary" onclick="navigateTo('home')">Voltar ao Início</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- ==========================================
+       CARRINHO LATERAL (DRAWER)
+       ========================================== -->
+    <aside class="cart-drawer-overlay" id="cartOverlay" onclick="closeCartOnOutside(event)">
+        <div class="cart-drawer">
+            <div class="cart-header">
+                <h3>Sua Sacola</h3>
+                <button class="btn-close-cart" onclick="toggleCart(false)">&times;</button>
+            </div>
+
+            <div class="cart-items" id="cartItemsContainer"></div>
+
+            <div class="cart-footer">
+                <div class="summary-item">
+                    <span>Subtotal:</span>
+                    <span class="cart-total-value" id="cartTotalDrawer">R$ 0,00</span>
+                </div>
+                <p class="cart-sustainable-text">
+                    Envio sustentável com embalagens 100% recicláveis.
+                </p>
+                <button class="btn btn-primary btn-block" onclick="goToCheckout()">
+                    Avançar para Compra
+                </button>
+            </div>
+        </div>
+    </aside>
+
+    <!-- ==========================================
+       MODAL DE AUTENTICAÇÃO (LOGIN / CADASTRO / ESQUECI)
+       ========================================== -->
+    <div class="modal-overlay" id="authModal">
+        <div class="modal-box">
+            <button class="modal-close" onclick="closeAuthModal()">&times;</button>
+
+            <!-- ABA: LOGIN -->
+            <div id="tab-login" class="auth-tab active">
+                <h3 class="auth-title">Bem-vindo(a)</h3>
+                <p class="auth-subtitle">Acesse sua conta para conferir seus pedidos.</p>
+                <form onsubmit="handleLogin(event)">
+                    <div class="form-group">
+                        <label for="loginEmail">E-mail</label>
+                        <input type="email" class="form-control" id="loginEmail" required
+                            placeholder="nome@exemplo.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="loginPassword">Senha</label>
+                        <input type="password" class="form-control" id="loginPassword" required placeholder="••••••••">
+                    </div>
+                    <div class="forgot-wrapper">
+                        <span class="forgot-link" onclick="openAuthModal('forgot')">Esqueceu a senha?</span>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Entrar</button>
+                </form>
+                <div class="auth-link-text">
+                    Não tem uma conta? <span onclick="openAuthModal('register')">Cadastre-se</span>
+                </div>
+            </div>
+
+            <!-- ABA: CADASTRO -->
+            <div id="tab-register" class="auth-tab">
+                <h3 class="auth-title">Criar Conta</h3>
+                <p class="auth-subtitle">Faça parte do clube botânico Lotus Corp.</p>
+                <form onsubmit="handleRegister(event)">
+                    <div class="form-group">
+                        <label for="registerName">Nome Completo</label>
+                        <input type="text" class="form-control" id="registerName" required placeholder="Seu Nome">
+                    </div>
+                    <div class="form-group">
+                        <label for="registerEmail">E-mail</label>
+                        <input type="email" class="form-control" id="registerEmail" required
+                            placeholder="nome@exemplo.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="registerPassword">Senha</label>
+                        <input type="password" class="form-control" id="registerPassword" required
+                            placeholder="Pelo menos 6 caracteres">
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Cadastrar</button>
+                </form>
+                <div class="auth-link-text">
+                    Já possui conta? <span onclick="openAuthModal('login')">Fazer Login</span>
+                </div>
+            </div>
+
+            <!-- ABA: RECUPERAR SENHA -->
+            <div id="tab-forgot" class="auth-tab">
+                <h3 class="auth-title">Recuperar Senha</h3>
+                <p class="auth-subtitle">Informe seu e-mail e receba um link de redefinição.</p>
+                <form onsubmit="handleForgot(event)">
+                    <div class="form-group">
+                        <label for="forgotEmail">E-mail Cadastrado</label>
+                        <input type="email" class="form-control" id="forgotEmail" required
+                            placeholder="nome@exemplo.com">
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Enviar Instruções</button>
+                </form>
+                <div class="auth-link-text">
+                    Lembrou a senha? <span onclick="openAuthModal('login')">Entrar</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==========================================
+       RODAPÉ
+       ========================================== -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <h3 class="brand-font footer-brand">Lotus Corp</h3>
+                <p class="footer-desc">A união entre a flora nobre e a arte da perfumaria orgânica de luxo. Cada frasco
+                    conta uma história viva.</p>
+            </div>
+            <div>
+                <h4 class="footer-title">Navegação</h4>
+                <ul class="footer-links">
+                    <li><a href="#" onclick="navigateTo('home')">Página Inicial</a></li>
+                    <li><a href="#" onclick="navigateTo('catalog')">Coleção</a></li>
+                    <li><a href="#" onclick="openAuthModal('login')">Área do Cliente</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="footer-title">Atendimento</h4>
+                <ul class="footer-links">
+                    <li><a href="#">contato@lotuscorp.com</a></li>
+                    <li><a href="#">São Paulo - Brasil</a></li>
+                    <li><a href="#">Seg a Sex: 09h às 18h</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 Lotus Corp Perfumes Botânicos. Todos os direitos reservados.
+        </div>
+    </footer>
+
+    <!-- Script Externo -->
+    <script src="script.js"></script>
+</body>
+
+</html>
